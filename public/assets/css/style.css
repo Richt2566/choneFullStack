@@ -1,0 +1,396 @@
+
+/* INDEX PAGE */
+
+body {
+  height: 100%;
+  margin-top: 20px;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.chone-front {
+  /*font-family: 'Monoton', cursive;*/
+  font-family: 'Anton', sans-serif;
+  font-size: 90px;
+	display: inline-block;
+  padding-left: 80px;
+  margin:0;
+
+}
+
+.nav-links {
+    font-family: 'Inconsolata', monospace;
+    list-style-type: none;
+    margin: 5px, 5px;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+    padding-left: 110px;
+}
+
+.index-overline, .port-overline, .content-overline, .about-overline {
+  border-top: 4px solid black;
+}
+
+/* Overline Reveal */
+.hvr-overline-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-overline-reveal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: black;
+  height: 4px;
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-overline-reveal:hover:before, .hvr-overline-reveal:focus:before, .hvr-overline-reveal:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.nav-links li {
+    float: left;
+    display: inline-block;
+    padding: 0px;
+    font-size: 20px;
+}
+
+li a {
+    /*font-family: 'Poiret One', cursive;*/
+    font-style: bold;
+    font-size: 19px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.foggy-img {
+  display: inline-block;
+}
+.foggy-tall {
+  display: none;
+}
+
+footer {
+  text-align: left;
+  height: 50px;
+  /*margin-top: 500px;*/
+  margin-bottom: 0;
+  color: white;
+  margin-top: -125px;
+  margin-left: 100px;
+}
+
+
+/*  ABOUT PAGE  */
+.chone-logo {
+  padding-top: 30px;
+  padding-left: 100px;
+}
+
+.about-chone-div p {
+  font-family: 'Inconsolata', monospace;
+  display: inline-block;
+  margin:-right: 20px;
+}
+
+.about-chone-div {
+  display: inline-block;
+  width: 500px;
+  margin: 50px;
+  padding: 30px;
+  border-right: 1px solid black;
+}
+
+.contact-form {
+  display: inline-block;
+  font-family: 'Inconsolata', monospace;
+  margin: 50px;
+  /*text-align: center;*/
+  padding: 10px;
+}
+
+input:focus::-webkit-input-placeholder { 
+  color:transparent; 
+}
+
+.contact-item {
+  width: 410px;
+}
+.contact-form input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.sendemail {
+  width: 20px
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px;
+}
+
+
+/*   GALLERY PAGE   */
+
+.photo2 {
+    float: right;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #0000;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.descript {
+    position: block;
+    clear:right;
+}
+
+.container:active {
+    color: black;
+}
+
+.descript2 {
+    position: inline;
+}
+.container2 {
+    position: 
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+/* BLOG PAGE  */
+
+.past-blog-posts {
+  display: inline-block;
+  margin: 20px;
+  float: right;
+  border: 2px solid black;
+  width: 30%;
+  background-color: grey;
+}
+
+.past-blog-posts li {
+  margin: 5px;
+}
+
+.main-content {
+  width: 920px;
+  display: inline-block;
+}
+
+.blog-section {
+  display: inline-block;
+  width: 410px;
+  margin: 10px;
+  margin-right: 30px;
+  /*padding: 100px;*/
+}
+
+.blog-sub1, .blog-sub2, .blog-sub3, .blog-sub4 {
+  display: block;
+  width: 400px;
+  text-align: center;
+  margin: 10px;
+  
+}
+
+
+
+@media only screen and (max-width: 700px){
+    /*.chone-responsive {
+      font-size: 120px;
+    }*/
+
+    .logo-responsive {
+      width: 70px;
+      padding-left: 10px;
+    }
+
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 550px){
+
+  .chone-responsive {
+      font-size: 80px;
+      margin: 5px;
+      padding: 0px;
+    }
+
+  .nav-links {
+    margin-left: 40px;
+    padding: 0;
+
+  }
+
+  li a {
+    font-size: 15px;
+  }
+    .responsive {
+        width: 100%;
+    }
+
+  footer {
+    margin-top: -80px;
+    margin-left: 40px;
+  }
+
+  a img {
+    width: 25px;
+  }
+}
+
+@media only screen and (max-width: 890px){
+
+  .blog-body {
+    /*background-color: blue;*/
+  }
+
+  .blog-section {
+    display: block;
+  }
+
+}
+
+@media only screen and (max-width: 375px){
+  .chone-responsive {
+      font-size: 70px;
+      margin: 5px;
+      padding-left: 10px;
+      text-align: center;
+  }
+
+  .nav-links {
+    margin-left: 20px;
+    padding: 0;
+
+  }
+
+  .foggy-img {
+    display: none;
+  }
+
+  .foggy-tall {
+    display: inline-block;
+  }
+  footer {
+    margin-top: -70px;
+    margin-left: 90px;
+  }
+  a img {
+    width: 40px;
+  }
+}
+
+/*.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
+
+/* Blog Page */
+
+ .blog_headline {
+  font-family: cursive;
+  font-size: 200px;
+  text-align: center;
+  display: inline-block;
+  text-shadow: 1px 1px #fe4902, 
+                2px 2px #fe4902, 
+                3px 3px #fe4902;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+
+.chone-logoblog {
+  margin: 0;
+  padding: 0;
+}
+/* portfolio */
+
+
+
